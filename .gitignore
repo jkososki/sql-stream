@@ -1,0 +1,5 @@
+# Exclude db files and scripts
+db/*
+
+# Keep structure
+!db/.keep

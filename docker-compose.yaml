@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  db:
+    build: 
+      context: https://github.com/jkososki/docker-mssql.git
+    environment:
+      wwi: "true"
+    ports:
+      - "1433:1433"
+    volumes:
+      - db:/tmp/mssql
